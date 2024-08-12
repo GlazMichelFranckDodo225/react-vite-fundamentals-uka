@@ -1,8 +1,13 @@
-function App() {
+import Demo from "./Demo"
+
+const App = () => {
   return (
-    <>
-      <h1>Hello React + Vite</h1>
-    </>
+    <div>
+      <h1>I am Glaz Michel Franck DODO</h1>
+      <input type="text" placeholder="My Name" />
+      <button>Submit</button>
+      <Demo />
+    </div>
   )
 }
 
