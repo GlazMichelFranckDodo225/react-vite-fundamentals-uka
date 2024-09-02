@@ -1,23 +1,20 @@
-const App = () => {
-  // const status = true;
-  const status = false;
-
-  if (status) {
-    return (
-      <div>
-        <h1>Login Status</h1>
-        <button>Logout</button>
-      </div>
-    )
+const loginStatusButton = (status) => {
+  if(status)  {
+    return <button>Logout</button>
   }
   else {
-    return (
-      <div>
-        <h1>Login Status</h1>
-        <button>Login</button>
-      </div>
-    )
+    return <button>Login</button>
   }
+}
+
+const App = () => {
+  return (
+    <div>
+      <h1>Login Status</h1>
+      {/* {loginStatusButton(true)} */}
+      {loginStatusButton(false)}
+    </div>
+  )
 }
 
 export default App
